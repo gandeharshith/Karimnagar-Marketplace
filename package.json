@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
-    "dev": "~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/vite",
-    "dev:full": "~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/vite",
-    "build": "~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/tsc -b && ~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/vite build",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.13.6",
