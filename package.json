@@ -4,14 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/vite",
+    "dev:full": "~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/vite",
+    "build": "~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/tsc -b && ~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "~/.nvm/versions/node/v20.20.0/bin/node node_modules/.bin/vite preview"
   },
   "dependencies": {
     "axios": "^1.13.6",
     "lucide-react": "^0.577.0",
+    "mongodb": "^6.21.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-hot-toast": "^2.6.0",
